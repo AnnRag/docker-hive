@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  hive:
+    image: hive:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: hive
+    ports:
+      - 10000:10000
+      - 9010:9000
